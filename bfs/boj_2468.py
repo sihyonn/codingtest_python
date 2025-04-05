@@ -3,9 +3,6 @@ regions = [list(map(int, input().split())) for _ in range(N)]
 max_height = max(map(max, regions))
 max_safe_area = 0
 
-visited = [[False] * N for _ in range(N)]
-count = 0
-
 
 def dfs(x, y, h, visited):
   visited[x][y] = True
