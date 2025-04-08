@@ -15,7 +15,7 @@
 # 전체 컴퓨터 수 받기
 n = int(input())
 m = int(input())
-visited = [False] * (m + 1)
+visited = [False] * (n + 1)
 
 # 입력값으로 인접그래프 만들기
 graph = [[] for _ in range(n+1)]  # 1.이중배열로 초기화
