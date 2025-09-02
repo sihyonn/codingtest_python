@@ -11,3 +11,24 @@ recal2 = [p + 'SE' for p in products]
 recall3 = [p.lower() for p in products ]
 recall4 = [p + '(최신형)' for p in products if p.endswith('2022')]
 print(recall4)
+
+def func1(names):
+  for name in names:
+    print(f"{name} 고객님 커트 가격은 10000원입니다.")\
+
+names = ['짱구', '유리', '흰둥이']
+func1(names)
+
+
+# class
+
+class BlackBox:
+  def __init__(self, name, price):
+    self.name = name
+    self.price = price
+
+  def set_travel_mode(self, min):
+    print(f'{self.name}{min}분 동안 여행모드 ON')
+
+b1 = BlackBox('까망이', 2000)
+b1.set_travel_mode(3)
